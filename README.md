@@ -6,6 +6,7 @@ Instalar as bibliotecas PythonAbra o seu terminal (Git Bash, WSL, Prompt de Coma
 
 2. Instalar o navegador Chromium do PlaywrightPara garantir a compatibilidade com o ecossistema do Playwright, rode:Bashplaywright install chromium
 📂 Estrutura do Projeto: Organize os arquivos da seguinte forma na pasta do seu projeto: meu-projeto/
+
 ├── lp_extract.py   # Script principal em Python
 ├── traducao.xlsx        # Planilha com as traduções de/para (Opcional)
 └── README.md            # Este guia
@@ -24,6 +25,7 @@ Executar o Script lp_extract.py
 O script executa um fluxo automatizado dividido em 6 etapas principais:[1. Carrega Excel] ➔ [2. Emula Chrome & Scroll] ➔ [3. Isola <main>] ➔ [4. Converte data-src] ➔ [5. Aplica De/Para] ➔ [6. Unifica e Limpa CSS]
 
 📁 Resultado GeradoApós a finalização, o script criará a pasta pagina_extraida/ na raiz do projeto com a seguinte estrutura pronta para publicação:Plaintextpagina_extraida/
+
 ├── desktop/
 │   ├── index.html   # Estrutura HTML limpa, traduzida e contendo apenas a tag <main>
 │   └── style.css    # Folha de estilo consolidada e corrigida
